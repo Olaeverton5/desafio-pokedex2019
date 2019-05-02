@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b501e9-367c-4405-b7d0-6d52b6b5cb99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/desafio_pokedex/pokedex/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio_pokedex/desafio_pokedex/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/desafio_pokedex/desafio_pokedex/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio_pokedex/pokedex/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/desafio_pokedex/pokedex/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,49 +22,42 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="py" value="8" />
+          <entry key="py" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="8" />
+          <entry key="Python" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
           <entry key="gitignore" value="17" />
-          <entry key="py" value="191" />
+          <entry key="py" value="695" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="191" />
+          <entry key="Python" value="695" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/desafio_pokedex/pokedex/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#639#671#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/desafio_pokedex/desafio_pokedex/settings.py">
+        <entry file="file://$PROJECT_DIR$/desafio_pokedex/pokedex/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="327">
+              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+              <folding>
+                <marker date="1556840691153" expanded="true" signature="89:94" ph="..." />
+                <marker date="1556840691153" expanded="true" signature="179:184" ph="..." />
+                <marker date="1556840691153" expanded="true" signature="333:338" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,8 +78,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/desafio_pokedex/.gitignore" />
-        <option value="$PROJECT_DIR$/desafio_pokedex/desafio_pokedex/settings.py" />
         <option value="$PROJECT_DIR$/desafio_pokedex/pokedex/urls.py" />
+        <option value="$PROJECT_DIR$/desafio_pokedex/desafio_pokedex/settings.py" />
+        <option value="$PROJECT_DIR$/desafio_pokedex/pokedex/models.py" />
       </list>
     </option>
   </component>
@@ -169,12 +161,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Python Console" weight="0.3295082" />
       <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -219,7 +212,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/desafio_pokedex/pokedex/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="259">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#639#671#0" expanded="true" />
@@ -229,8 +222,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/desafio_pokedex/desafio_pokedex/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="204">
+          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desafio_pokedex/pokedex/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding>
+            <marker date="1556840691153" expanded="true" signature="89:94" ph="..." />
+            <marker date="1556840691153" expanded="true" signature="179:184" ph="..." />
+            <marker date="1556840691153" expanded="true" signature="333:338" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
