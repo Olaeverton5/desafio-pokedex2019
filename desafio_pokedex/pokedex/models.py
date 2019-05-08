@@ -9,7 +9,7 @@ class Categoria(models.Model):
     def __str__(self):
         return self.nome
 
-    def __str__(self):
+    def __int__(self):
         return self.id
 
 
