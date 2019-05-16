@@ -1,0 +1,24 @@
+<title>POKEDEX</title>
+</head>
+<body>
+<h1>{{ usuario }}</h1>
+<table border="1">
+    <tr>
+        <th>Nome</th>
+        <th>Altura</th>
+        <th>Velocidade</th>
+        <th>Categoria</th>
+    </tr>
+    {% for objeto in todos_pokemons %}
+        <tr>
+            <td>{{ objeto.nome }}</td>
+            <td>{{ objeto.altura }}</td>
+            <td>{{ objeto.velocidade }}</td>
+            <td>{{ objeto.fk_categoria.nome }}{{ objeto.ataque }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+
+</body>
+</html>
