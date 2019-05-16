@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Altura</th>
+                <th>Velocidade</th>
+                <th>Categoria</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for objeto in todos_pokemons %}
+                <tr scope="row">
+                    <td>{{ objeto.nome }}</td>
+                    <td>{{ objeto.altura }}</td>
+                    <td>{{ objeto.velocidade }}</td>
+                    <td>{{ objeto.fk_categoria.nome }}{{ objeto.ataque }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+{% endblock %}

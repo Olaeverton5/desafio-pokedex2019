@@ -11,10 +11,16 @@ def mostrarPokemons(request):
 
     contexto = {
         "todos_pokemons": pokemons,
-        "usuario": "stefan",
-        "data_atual": "16/05/2019"
     }
-    return render(request, 'basico.html', contexto)
+    return render(request, 'listar.html', contexto)
+
+def mostrarPokemon(request):
+    pokemon = Pokemon.objects.all().first()
+
+    contexto = {
+        "pokemon": pokemon,
+    }
+    return render(request,'pokemon.html',contexto)
 
 @csrf_exempt
 def salvarCategoria(request):
@@ -24,4 +30,6 @@ def salvarCategoria(request):
 
             return HttpResponse("Inseriu",)
         return HttpResponse("FOI POST EM BRANCO")
+    if request.method == "GET":
+        return HttpResponse("Não aceito get")
     return HttpResponse("NÃO FOI POST")

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<div class="card" style="width: 18rem;">
+    <img src="{{ pokemon.imagem.url }}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{ pokemon.nome }}</h5>
+        <p class="card-text">{{ pokemon.fk_categoria.nome }}</p>
+    </div>
+</div>
+{% endblock %}
