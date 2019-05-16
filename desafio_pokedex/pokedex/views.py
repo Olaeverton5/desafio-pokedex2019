@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Pokemon
+from .models import *
+from django.views.decorators.csrf import csrf_exempt
+
 
 # Create your views here.
 
@@ -10,9 +12,9 @@ def mostrarPokemons(request):
     contexto = {
         "todos_pokemons": pokemons,
         "usuario": "stefan",
-        "data_atual": "09/05/2019"
+        "data_atual": "16/05/2019"
     }
-    return render(request,'basico.html',contexto)
+    return render(request, 'basico.html', contexto)
 
 @csrf_exempt
 def salvarCategoria(request):

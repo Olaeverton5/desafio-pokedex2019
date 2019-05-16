@@ -15,9 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
 from .views import *
 urlpatterns = [
-path("listar",mostrarPokemons, name="listar_pokemons"),
-    path("categoria/criar/",salvarCategoria,name="nova_categoria")
+    path("listar", mostrarPokemons, name="listar_pokemons"),
+    path("categoria/criar/", salvarCategoria, name="nova_categoria")
 ]
