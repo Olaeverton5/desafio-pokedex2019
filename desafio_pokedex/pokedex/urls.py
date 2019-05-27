@@ -21,5 +21,5 @@ app_name="pokedex"
 
 urlpatterns = [
     path("listar", listarPokemons, name="listar_pokemons"),
-    path("pokemon/<int:idpokemon>/", umPokemon , name="um_pokemon")
+    path("pokemon/<int:idpokemon>/", umPokemon, name="um_pokemon")
 ]
