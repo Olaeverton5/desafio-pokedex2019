@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from .views import *
+
+app_name="pokedex"
+
 urlpatterns = [
-    path("listar", mostrarPokemons, name="listar_pokemons"),
-    path("mostrar",mostrarPokemon, name="mostrar_pokemon"),
-    path("categoria/criar/", salvarCategoria, name="nova_categoria")
+    path("listar", listarPokemons, name="listar_pokemons"),
+    path("pokemon/<int:idpokemon>/", umPokemon , name="um_pokemon")
 ]

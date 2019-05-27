@@ -6,7 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 
-def mostrarPokemons(request):
+def listarPokemons(request):
     pokemons = Pokemon.objects.all()
 
     contexto = {
@@ -14,22 +14,9 @@ def mostrarPokemons(request):
     }
     return render(request, 'listar.html', contexto)
 
-def mostrarPokemon(request):
-    pokemon = Pokemon.objects.all().first()
-
+def umPokemon(request, idpokemon=None):
+    pokemon = Pokemon.objects.get(id=idpokemon)
     contexto = {
         "pokemon": pokemon,
     }
-    return render(request,'pokemon.html',contexto)
-
-@csrf_exempt
-def salvarCategoria(request):
-    if request.method == "POST":
-        if 'nome' in request.POST:
-            Categoria.objects.create(nome=request.POST['nome'])
-
-            return HttpResponse("Inseriu",)
-        return HttpResponse("FOI POST EM BRANCO")
-    if request.method == "GET":
-        return HttpResponse("Não aceito get")
-    return HttpResponse("NÃO FOI POST")
+    return render(request, 'pokemon.html', contexto)
