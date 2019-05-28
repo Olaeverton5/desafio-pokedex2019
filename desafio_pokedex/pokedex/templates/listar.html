@@ -7,7 +7,12 @@
             <th>Nome</th>
             <th>Altura</th>
             <th>Velocidade</th>
+            <th>Ataque</th>
+            <th>Defesa</th>
+            <th>Ataque Especial</th>
+            <th>Defesa Especial</th>
             <th>Categoria</th>
+            <th>Habilidades</th>
         </tr>
         </thead>
         <tbody>
@@ -18,7 +23,12 @@
                 <td>{{ objeto.nome }}</td>
                 <td>{{ objeto.altura }}</td>
                 <td>{{ objeto.velocidade }}</td>
-                <td>{{ objeto.fk_categoria.nome }}{{ objeto.ataque }}</td>
+                <td>{{ objeto.ataque }}</td>
+                <td>{{ objeto.defesa }}</td>
+                <td>{{ objeto.ataque_especial }}</td>
+                <td>{{ objeto.defesa_especial }}</td>
+                <td>{{ objeto.fk_categoria.nome }}</td>
+                <td>{{ objeto.fk_habilidades.nome }}</td>
             </tr>
         {% endfor %}
         </tbody>
