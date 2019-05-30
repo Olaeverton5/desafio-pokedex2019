@@ -28,7 +28,7 @@
     </table>-->
 <div id="cards">
     {% for objeto in todos_pokemons %}
-        <figure class="card card--normal">
+        <figure class="card {{objeto.estilo_card.classe}}">
           <div class="card__image-container">
             <img src="{{ objeto.imagem.url }}" alt="Eevee" class="card__image">
           </div>
@@ -61,7 +61,7 @@
                 <span class="card__label">Ability</span>
                 Run Away
               </h4>
-              <h4 class="card__ability">
+              <h4 class="card__ability">card--normal
                 <span class="card__label">Hidden Ability</span>
                 Anticipation
               </h4>

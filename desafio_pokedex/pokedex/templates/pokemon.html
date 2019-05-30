@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block conteudo %}
+<h1 align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-xioWkApjxVhixlWEMZE9pscUM8bzGqU_-gES8O7_amuTBj2BgQ" alt="Eevee" class="card__image"></h1></br>
  <!--<div class="card mb-3"  style="width: 18rem;">
       <div class="row no-gutters">
         <div class="col-md-4">
@@ -25,7 +26,7 @@
  </div>-->
 <div id="cards">
 
-<figure class="card card--normal">
+<figure class="card {{pokemon.estilo_card.classe}}">
   <div class="card__image-container">
     <img src="{{ pokemon.imagem.url }}" alt="Eevee" class="card__image">
   </div>
@@ -88,6 +89,6 @@
 </script>
 
 <a href="{% url 'pokedex:listar_pokemons' %}">
-        <button>Voltar</button>
+  <button type="button" class="btn btn-warning">Voltar</button>
 </a>
 {% endblock %}
